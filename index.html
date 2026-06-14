@@ -24,6 +24,7 @@
           <span id="time" class="stat-value">30</span>
         </div>
       </div>
+      <div id="combo" class="combo hidden">Combo <span id="comboMult">x2</span>!</div>
     </header>
 
     <main class="board" id="board">
@@ -36,7 +37,11 @@
         <button class="diff-btn" data-diff="normal">Normal</button>
         <button class="diff-btn" data-diff="hard">Hard</button>
       </div>
-      <button id="startBtn" class="start-btn">Start Game</button>
+      <div class="action-row">
+        <button id="startBtn" class="start-btn">Start Game</button>
+        <button id="muteBtn" class="mute-btn" aria-label="Toggle sound" title="Toggle sound">🔊</button>
+      </div>
+      <p class="hint">Whack the dogs — but let the 😴 <em>sleeping</em> dogs lie!</p>
     </div>
 
     <div class="overlay hidden" id="overlay">

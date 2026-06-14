@@ -8,10 +8,20 @@ Tap or click the pups as they pop out of their holes before they duck back down!
 1. Pick a difficulty: **Easy**, **Normal**, or **Hard**.
 2. Press **Start Game**.
 3. Whack (tap / click) every dog that pops up before the 30-second timer runs out.
-4. Each whack is worth a point. Beat your best score!
+4. Each whack scores points. Beat your best score!
 
-Difficulty changes how fast the dogs pop up, how long they stay, and how many
-can be up at once.
+### Features
+
+- **Combo multiplier** — chain whacks without a mistake to build a streak.
+  Every 3 hits bumps your multiplier (up to **x5**), so each dog is worth more.
+- **Sleeping dogs 😴 (penalty)** — some dogs pop up snoozing with a red tint.
+  Whack one and you *lose points* and reset your combo. Let sleeping dogs lie!
+- **Sound effects** — punchy whack blips, rising combo chimes, and a buzzer for
+  penalties (Web Audio — no files needed). Toggle with the 🔊 button.
+- **Best score** saved locally in your browser.
+
+Difficulty changes how fast the dogs pop up, how long they stay, how many can be
+up at once, and how often sleeping dogs appear.
 
 ## Running it
 
