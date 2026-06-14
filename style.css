@@ -156,15 +156,18 @@ body {
 .dog {
   position: absolute;
   left: 50%;
-  bottom: 2%;
+  bottom: 3%;
   /* Size by height so tall portrait dogs (e.g. the Jack Russell) fit fully
-     and aren't clipped at the top; max-width keeps squarer dogs in check. */
+     and aren't clipped at the top; max-width keeps squarer dogs in check.
+     Kept smaller so the whole dog (head included) is always visible. */
   width: auto;
-  height: 82%;
-  max-width: 84%;
-  transform: translate(-50%, 115%);
+  height: 66%;
+  max-width: 70%;
+  transform: translate(-50%, 130%);
   transition: transform 0.16s cubic-bezier(0.34, 1.56, 0.64, 1);
-  z-index: 2;
+  /* Above the dirt mound (z-index 3) so the dog pops out IN FRONT of the
+     hole, with the mound sitting behind its lower body. */
+  z-index: 4;
   pointer-events: none;
   filter: drop-shadow(0 6px 6px rgba(0, 0, 0, 0.35));
 }
@@ -189,7 +192,7 @@ body {
   top: 6%;
   left: 50%;
   transform: translateX(-50%) translateY(120%);
-  z-index: 4;
+  z-index: 5;
   font-size: 1.6rem;
   opacity: 0;
   pointer-events: none;
@@ -210,7 +213,7 @@ body {
 .bonk-fx {
   position: absolute;
   inset: 0;
-  z-index: 4;
+  z-index: 6;
   pointer-events: none;
   display: flex;
   align-items: center;
