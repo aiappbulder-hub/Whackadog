@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Whack-a-Dog 🐶</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="game">
+    <header class="hud">
+      <h1 class="title">Whack&nbsp;a&nbsp;Dog</h1>
+      <div class="stats">
+        <div class="stat">
+          <span class="stat-label">Score</span>
+          <span id="score" class="stat-value">0</span>
+        </div>
+        <div class="stat">
+          <span class="stat-label">Best</span>
+          <span id="best" class="stat-value">0</span>
+        </div>
+        <div class="stat">
+          <span class="stat-label">Time</span>
+          <span id="time" class="stat-value">30</span>
+        </div>
+      </div>
+      <div id="combo" class="combo hidden">Combo <span id="comboMult">x2</span>!</div>
+    </header>
+
+    <main class="board" id="board">
+      <!-- holes injected by JS -->
+    </main>
+
+    <div class="controls">
+      <div class="difficulty" id="difficulty">
+        <button class="diff-btn active" data-diff="easy">Easy</button>
+        <button class="diff-btn" data-diff="normal">Normal</button>
+        <button class="diff-btn" data-diff="hard">Hard</button>
+      </div>
+      <div class="action-row">
+        <button id="startBtn" class="start-btn">Start Game</button>
+        <button id="muteBtn" class="mute-btn" aria-label="Toggle sound" title="Toggle sound">🔊</button>
+      </div>
+      <p class="hint">Whack the dogs — but let the 😴 <em>sleeping</em> dogs lie!</p>
+    </div>
+
+    <div class="overlay hidden" id="overlay">
+      <div class="overlay-card">
+        <h2 id="overlayTitle">Game Over!</h2>
+        <p class="final-score">You whacked <span id="finalScore">0</span> dogs!</p>
+        <p id="newBest" class="new-best hidden">🏆 New best score!</p>
+        <button id="playAgainBtn" class="start-btn">Play Again</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
